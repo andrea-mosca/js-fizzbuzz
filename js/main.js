@@ -20,6 +20,14 @@ for (i = 1; i <= 100; i++){
     }
 }
 
+// soluzione più semplificata possibile:
 for (i = 1; i <= 100; i++){
     console.log( (i %3 ? "" : "Fizz") +(i % 5 ? "" : "Buzz") || i);
 }
+//equiivale a: 
+for (i = 1; i <= 100; i++){
+    console.log( (i % 3 === 0 ? "Fizz" : "") +(i % 5 === 0 ? "Buzz" : "") || i);
+}
+
+// --TO DO-- 
+// commentare due script su tre per testarne il funzionamento
